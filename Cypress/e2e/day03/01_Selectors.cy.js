@@ -14,7 +14,7 @@ describe("Slectors Exapmpe", () => {
     //3.YOL BY CLASS
     cy.get('.nav-input nav-progressive-attribute')
 
-    //4.YOL BY ATTRIBUTE AND VALUE
+    //4.YOL BY ATTRIBUTE AND VALUE.....
   });
 
   it.skip("XPATH", () => {});
