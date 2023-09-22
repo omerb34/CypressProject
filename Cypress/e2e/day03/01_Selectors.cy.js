@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 describe("Slectors Exapmpe", () => {
-  it("CSS Selectors", () => {
+  it.skip("CSS Selectors", () => {
     cy.visit("https://www.amazon.com/");
     //1.YOL BAY TAGNAME:
     cy.get('input')
@@ -17,5 +17,12 @@ describe("Slectors Exapmpe", () => {
     //4.YOL BY ATTRIBUTE AND VALUE.....
   });
 
-  it.skip("XPATH", () => {});
+  it("XPATH", () => {
+    cy.visit('https://www.google.com')
+    cy.xpath("//*[@id='APjFqb']").type('iphone')
+
+  })
+
+
+
 });
