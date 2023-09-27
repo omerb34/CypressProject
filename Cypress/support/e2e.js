@@ -21,3 +21,4 @@ import 'cypress-iframe';
 // require('./commands')
 require('cypress-xpath')
 require('@4tw/cypress-drag-drop')
+import 'cypress-file-upload';

@@ -31,3 +31,12 @@ Cypress.Commands.add('ap_login', (email,password) => {
         cy.get('#passwd').type(password)
         cy.get('#SubmitLogin > span').click()
 })
+
+//Amazon İçin ARAMA
+Cypress.Commands.add('amazonSearch',(productName) =>{
+    cy.visit('https://www.amazon.com.tr/')
+    cy.get('#twotabsearchtextbox').type(productName)
+    cy.get('#nav-search-submit-button').click()
+
+
+})
